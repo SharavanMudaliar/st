@@ -1,6 +1,46 @@
-shorturl.at/lnwxS
+shorturl.at/lnwx
 
-https://drive.google.com/drive/folders/1--qQ-_mBGWN-p_CE-G-a9sSbWIuCjSK-
+shorturl.at/GIKSVS
 
-https://drive.google.com/drive/folders/1BsR1kBHcosdZH0Do8fJgFwMPCxrBej1-
+shorturl.at/efkDN
 
+https://drive.google.com/drive/folders/1w8eJqUMdIJo2S0P1LzmETLF5VASGrqHd?usp=drive_link
+
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<%
+    double lati = Double.parseDouble(request.getParameter("t1"));
+    double longi = Double.parseDouble(request.getParameter("t2"));
+%>
+<h3> Google Maps </h3>
+<div id="map"></div>
+<script>
+    function initMap() {
+        var lati = <%=lati%>;
+        var longi = <%=longi%>;
+        var info = {lat: lati, lng: longi};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: info
+        });
+        var marker = new google.maps.Marker({
+            position: info,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+</body>
+</html>
