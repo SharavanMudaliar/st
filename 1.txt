@@ -1,4 +1,4 @@
-shorturl.at/lnwx
+https://console.cloud.google.com/apis/credentials?project=axial-reference-422514-u4shorturl.at/lnwx
 
 shorturl.at/GIKSVS
 
@@ -6,6 +6,7 @@ shorturl.at/efkDN
 
 https://drive.google.com/drive/folders/1w8eJqUMdIJo2S0P1LzmETLF5VASGrqHd?usp=drive_link
 
+https://console.cloud.google.com/apis/credentials?project=axial-reference-422514-u4
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
